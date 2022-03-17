@@ -124,3 +124,7 @@ Temporary Items
 .apdisk
 .vscode/
 Builds/
+
+# Other
+*.pdf
+*.pdf.meta
