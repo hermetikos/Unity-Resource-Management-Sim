@@ -7,7 +7,12 @@ public class MainManager : MonoBehaviour
 {
     // we create a public static variable to store the 'this' of MainManager
     // this makes this 
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; }
+    // init Main Mananger as a getter with a private setter
+    // basically, mark it as read only for public access
+    // but allow it to modify itself
+    // any variable with a get/set accessor is considered a property
+    // a property is a class variable that provides access to internal class data
 
     public Color TeamColor;
 
